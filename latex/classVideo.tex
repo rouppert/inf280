@@ -1,0 +1,220 @@
+\hypertarget{classVideo}{}\doxysection{Video Class Reference}
+\label{classVideo}\index{Video@{Video}}
+
+
+This class describes a \mbox{\hyperlink{classVideo}{Video}}. A \mbox{\hyperlink{classVideo}{Video}} is a \mbox{\hyperlink{classMultimedia}{Multimedia}} object which has a length.  
+
+
+
+
+{\ttfamily \#include $<$video.\+h$>$}
+
+
+
+Inheritance diagram for Video\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classVideo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Video\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classVideo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classVideo_a4ab6ef38918eb14f7e82f4db3ea7d6cd}{set\+Length}} (int length\+\_\+)
+\item 
+int \mbox{\hyperlink{classVideo_aec254221ef43f05ee7711012707cfef3}{get\+Length}} () const
+\item 
+string \mbox{\hyperlink{classVideo_ac29129c173fb98306ce618e537a08637}{get\+Class\+Name}} () const override
+\item 
+virtual string \mbox{\hyperlink{classVideo_ae83cabb6a6f55688c83826e7af6146af}{display\+Param}} (ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Displays parameters of the video (name, pathname, length) on \char`\"{}out\char`\"{}. Overrides original \mbox{\hyperlink{classMultimedia}{Multimedia}} method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVideo_a89e11497f4f200f387805b10bd42922d}{play}} () const override
+\begin{DoxyCompactList}\small\item\em Plays video using mpv. Overrides original \mbox{\hyperlink{classMultimedia}{Multimedia}} method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVideo_a3a754d5381e3d306e0a8081f38d5cf0b}{create\+From\+File}} (string parameters) override
+\begin{DoxyCompactList}\small\item\em Reads given line in a file, on which parameters of \mbox{\hyperlink{classMultimedia}{Multimedia}} Object are saved, and creates matching object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVideo_a18357be925311a5a2f5aadccb52908ca}{save\+In\+File}} (std\+::ostream \&f) const override
+\begin{DoxyCompactList}\small\item\em Saves \mbox{\hyperlink{classMultimedia}{Multimedia}} object\textquotesingle{}s parameters in given file f. Parameters are written as in following example. \char`\"{}\+Photo example multimedia/example.\+jpeg\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVideo_aebf7e2a8fa2bbd79335b1cf35925d190}{$\sim$\+Video}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVideo_ab67336c2c5b6227a9635bc7dcd6af543}{Video}} ()
+\item 
+\mbox{\hyperlink{classVideo_a53205ed04deae4803839bfbd3d8bfbce}{Video}} (int length\+\_\+, string name\+\_\+, string pathname\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classVideo}{Video}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classVideo_a942de9fdcc4f73565e9c61875502ee88}{Generic\+Table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a \mbox{\hyperlink{classVideo}{Video}}. A \mbox{\hyperlink{classVideo}{Video}} is a \mbox{\hyperlink{classMultimedia}{Multimedia}} object which has a length. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMultimedia}{Multimedia}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVideo_ab67336c2c5b6227a9635bc7dcd6af543}\label{classVideo_ab67336c2c5b6227a9635bc7dcd6af543}} 
+\index{Video@{Video}!Video@{Video}}
+\index{Video@{Video}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{Video()}{Video()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Video\+::\+Video (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classVideo_a53205ed04deae4803839bfbd3d8bfbce}\label{classVideo_a53205ed04deae4803839bfbd3d8bfbce}} 
+\index{Video@{Video}!Video@{Video}}
+\index{Video@{Video}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{Video()}{Video()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Video\+::\+Video (\begin{DoxyParamCaption}\item[{int}]{length\+\_\+,  }\item[{string}]{name\+\_\+,  }\item[{string}]{pathname\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classVideo}{Video}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length\+\_\+} & \+: length of the video. \\
+\hline
+{\em name\+\_\+} & \\
+\hline
+{\em pathname\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVideo_aebf7e2a8fa2bbd79335b1cf35925d190}\label{classVideo_aebf7e2a8fa2bbd79335b1cf35925d190}} 
+\index{Video@{Video}!````~Video@{$\sim$Video}}
+\index{````~Video@{$\sim$Video}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{$\sim$Video()}{~Video()}}
+{\footnotesize\ttfamily Video\+::$\sim$\+Video (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVideo_a3a754d5381e3d306e0a8081f38d5cf0b}\label{classVideo_a3a754d5381e3d306e0a8081f38d5cf0b}} 
+\index{Video@{Video}!createFromFile@{createFromFile}}
+\index{createFromFile@{createFromFile}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{createFromFile()}{createFromFile()}}
+{\footnotesize\ttfamily void Video\+::create\+From\+File (\begin{DoxyParamCaption}\item[{string}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reads given line in a file, on which parameters of \mbox{\hyperlink{classMultimedia}{Multimedia}} Object are saved, and creates matching object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & line on which parameters of the object are written. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a2ac9328ec37ed15265c762711b9cd88b}{Multimedia}}.
+
+\mbox{\Hypertarget{classVideo_ae83cabb6a6f55688c83826e7af6146af}\label{classVideo_ae83cabb6a6f55688c83826e7af6146af}} 
+\index{Video@{Video}!displayParam@{displayParam}}
+\index{displayParam@{displayParam}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{displayParam()}{displayParam()}}
+{\footnotesize\ttfamily virtual string Video\+::display\+Param (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays parameters of the video (name, pathname, length) on \char`\"{}out\char`\"{}. Overrides original \mbox{\hyperlink{classMultimedia}{Multimedia}} method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \+: output stream for parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parameters of the video (name, pathname, length). 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a4eed873fe92b1b6a84fbb1a065ebffea}{Multimedia}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classFilm_a34d29064b8a56378c1d2113ea15d26c8}{Film}}.
+
+\mbox{\Hypertarget{classVideo_ac29129c173fb98306ce618e537a08637}\label{classVideo_ac29129c173fb98306ce618e537a08637}} 
+\index{Video@{Video}!getClassName@{getClassName}}
+\index{getClassName@{getClassName}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{getClassName()}{getClassName()}}
+{\footnotesize\ttfamily string Video\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a297b86e903b48d84acb3590fc9f79ba1}{Multimedia}}.
+
+\mbox{\Hypertarget{classVideo_aec254221ef43f05ee7711012707cfef3}\label{classVideo_aec254221ef43f05ee7711012707cfef3}} 
+\index{Video@{Video}!getLength@{getLength}}
+\index{getLength@{getLength}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily int Video\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classVideo_a89e11497f4f200f387805b10bd42922d}\label{classVideo_a89e11497f4f200f387805b10bd42922d}} 
+\index{Video@{Video}!play@{play}}
+\index{play@{play}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Video\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Plays video using mpv. Overrides original \mbox{\hyperlink{classMultimedia}{Multimedia}} method. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a502744cc84895fa629cb7c211b21b1ca}{Multimedia}}.
+
+\mbox{\Hypertarget{classVideo_a18357be925311a5a2f5aadccb52908ca}\label{classVideo_a18357be925311a5a2f5aadccb52908ca}} 
+\index{Video@{Video}!saveInFile@{saveInFile}}
+\index{saveInFile@{saveInFile}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{saveInFile()}{saveInFile()}}
+{\footnotesize\ttfamily void Video\+::save\+In\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Saves \mbox{\hyperlink{classMultimedia}{Multimedia}} object\textquotesingle{}s parameters in given file f. Parameters are written as in following example. \char`\"{}\+Photo example multimedia/example.\+jpeg\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \+: file to save object in. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_ada7f3879d420c354f90ba471ea849a19}{Multimedia}}.
+
+\mbox{\Hypertarget{classVideo_a4ab6ef38918eb14f7e82f4db3ea7d6cd}\label{classVideo_a4ab6ef38918eb14f7e82f4db3ea7d6cd}} 
+\index{Video@{Video}!setLength@{setLength}}
+\index{setLength@{setLength}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{setLength()}{setLength()}}
+{\footnotesize\ttfamily void Video\+::set\+Length (\begin{DoxyParamCaption}\item[{int}]{length\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classVideo_a942de9fdcc4f73565e9c61875502ee88}\label{classVideo_a942de9fdcc4f73565e9c61875502ee88}} 
+\index{Video@{Video}!GenericTable@{GenericTable}}
+\index{GenericTable@{GenericTable}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{GenericTable}{GenericTable}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classGenericTable}{Generic\+Table}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{video_8h}{video.\+h}}\item 
+src/\mbox{\hyperlink{video_8cpp}{video.\+cpp}}\end{DoxyCompactItemize}

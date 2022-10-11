@@ -1,0 +1,18 @@
+<map id="include/multimedia.h" name="include/multimedia.h">
+<area shape="rect" id="node1" title=" " alt="" coords="183,5,343,32"/>
+<area shape="rect" id="node2" href="$multimedia_8cpp.html" title=" " alt="" coords="53,80,200,107"/>
+<area shape="rect" id="node3" href="$group_8h.html" title=" " alt="" coords="227,155,349,181"/>
+<area shape="rect" id="node11" href="$photo_8h.html" title=" " alt="" coords="80,155,203,181"/>
+<area shape="rect" id="node13" href="$video_8h.html" title=" " alt="" coords="418,80,539,107"/>
+<area shape="rect" id="node4" href="$group_8cpp.html" title=" " alt="" coords="189,229,299,256"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="302,304,407,331"/>
+<area shape="rect" id="node6" href="$genericTable_8h.html" title=" " alt="" coords="425,229,591,256"/>
+<area shape="rect" id="node7" href="$genericTable_8cpp.html" title=" " alt="" coords="431,304,585,331"/>
+<area shape="rect" id="node8" href="$server_8h.html" title=" " alt="" coords="609,304,735,331"/>
+<area shape="rect" id="node9" href="$server_8cpp.html" title=" " alt="" coords="543,379,655,405"/>
+<area shape="rect" id="node10" href="$tcpserver_8cpp.html" title=" " alt="" coords="679,379,811,405"/>
+<area shape="rect" id="node12" href="$photo_8cpp.html" title=" " alt="" coords="5,229,115,256"/>
+<area shape="rect" id="node14" href="$video_8cpp.html" title=" " alt="" coords="425,155,533,181"/>
+<area shape="rect" id="node15" href="$film_8h.html" title=" " alt="" coords="609,155,719,181"/>
+<area shape="rect" id="node16" href="$film_8cpp.html" title=" " alt="" coords="667,229,765,256"/>
+</map>

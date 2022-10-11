@@ -1,0 +1,19 @@
+\hypertarget{namespacecppu}{}\doxysection{cppu Namespace Reference}
+\label{namespacecppu}\index{cppu@{cppu}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcppu_1_1InputBuffer}{Input\+Buffer}}
+\item 
+class \mbox{\hyperlink{classcppu_1_1Socket}{Socket}}
+\begin{DoxyCompactList}\small\item\em TCP/\+IP or UDP/\+Datagram socket. This class encapsulates a TCP/\+IP or UDP/\+Datagram socket. AF\+\_\+\+INET connections following the IPv4 Internet protocol are supported. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcppu_1_1ServerSocket}{Server\+Socket}}
+\begin{DoxyCompactList}\small\item\em TCP/\+IP server socket. This class implements a TCP/\+IP socket that waits for requests to come in over the network. AF\+\_\+\+INET connections following the IPv4 Internet protocol are supported. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcppu_1_1SocketBuffer}{Socket\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Preserves record boundaries when exchanging data between connected TCP/\+IP sockets. This class ensures that one call to \mbox{\hyperlink{classcppu_1_1SocketBuffer_a92ae0351aaee8719d34e8c4618495d59}{write\+Line()}} corresponds to one and exactly one call to \mbox{\hyperlink{classcppu_1_1SocketBuffer_a222769d3776b9cbd3a727ee1f0e60358}{read\+Line()}} on the other side. This differs from the behavior of \mbox{\hyperlink{classcppu_1_1Socket_aeac77f859159715e2d63a5a0dc118788}{Socket\+::send()}} and \mbox{\hyperlink{classcppu_1_1Socket_a37c382af52cc02f92c0e19a0c6e0e04f}{Socket\+::receive()}} because TCP/\+IP connected sockets do not preserve record boundaries. \mbox{\hyperlink{classcppu_1_1SocketBuffer_a92ae0351aaee8719d34e8c4618495d59}{write\+Line()}} and \mbox{\hyperlink{classcppu_1_1SocketBuffer_a222769d3776b9cbd3a727ee1f0e60358}{read\+Line()}} solve this problem by automatically adding and searching for a separator between successive lines. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcppu_1_1TCPServer}{TCPServer}}
+\begin{DoxyCompactList}\small\item\em TCP/\+IP IPv4 server. The server supports TCP/\+IP AF\+\_\+\+INET connections (following the IPv4 Internet protocol) with multiple clients. One thread is used per client. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcppu_1_1TCPLock}{TCPLock}}
+\begin{DoxyCompactList}\small\item\em Locks the server in read mode or in write mode. Must be created {\itshape in the stack} by the callback method. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcppu_1_1TCPConnection}{TCPConnection}}
+\begin{DoxyCompactList}\small\item\em Connection with a given client. Each \mbox{\hyperlink{classcppu_1_1TCPConnection}{TCPConnection}} uses a different thread. \end{DoxyCompactList}\end{DoxyCompactItemize}

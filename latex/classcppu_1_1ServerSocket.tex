@@ -1,0 +1,182 @@
+\hypertarget{classcppu_1_1ServerSocket}{}\doxysection{cppu\+::Server\+Socket Class Reference}
+\label{classcppu_1_1ServerSocket}\index{cppu::ServerSocket@{cppu::ServerSocket}}
+
+
+TCP/\+IP server socket. This class implements a TCP/\+IP socket that waits for requests to come in over the network. AF\+\_\+\+INET connections following the IPv4 Internet protocol are supported.  
+
+
+
+
+{\ttfamily \#include $<$cppsocket.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcppu_1_1ServerSocket_a57138f5a7d2e8af35228c8985385c494}{Server\+Socket}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new server socket. Creates a listening socket that waits for connection requests by TCP/\+IP clients. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classcppu_1_1ServerSocket_a1a09b8b6c05087b84660e2b2ad93b557}{$\sim$\+Server\+Socket}} ()
+\item 
+virtual \mbox{\hyperlink{classcppu_1_1Socket}{Socket}} $\ast$ \mbox{\hyperlink{classcppu_1_1ServerSocket_af08ebcb886fc778d195fb622f7b96b8b}{accept}} ()
+\begin{DoxyCompactList}\small\item\em Accepts a new connection request and returns the corresponding socket. By default, this function blocks the caller until a connection is present. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classcppu_1_1ServerSocket_a255dfdccba51c7cdbcb6733c6c3f6ffa}{bind}} (int port, int backlog=50)
+\begin{DoxyCompactList}\small\item\em Assigns the socket to the local address. The socket must be bound before using it. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classcppu_1_1ServerSocket_ae7647cfb5beaf504a846f6ecfdd197c4}{close}} ()
+\begin{DoxyCompactList}\small\item\em Closes the socket. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcppu_1_1ServerSocket_a9e64d9443686fcfdce6b2c4386597e3b}{is\+Closed}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the socket has been closed. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcppu_1_1ServerSocket_a905d85f63fdca46ed5ee44eb00e211d1}{descriptor}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Unix descriptor of the socket. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcppu_1_1ServerSocket_a0fbd0ee42bcfecf2e749279c4b94b0b3}{set\+Receive\+Buffer\+Size}} (int size)
+\begin{DoxyCompactList}\small\item\em Sets the SO\+\_\+\+RCVBUF option to the specified value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcppu_1_1ServerSocket_a09d0494cc0f65abe496b9c940d2920ed}{set\+Reuse\+Address}} (bool)
+\begin{DoxyCompactList}\small\item\em Enables/disables the SO\+\_\+\+REUSEADDR socket option. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcppu_1_1ServerSocket_a0ceb984eab0cdd9c7c8e62658a521175}{set\+So\+Timeout}} (int timeout)
+\begin{DoxyCompactList}\small\item\em Enables/disables SO\+\_\+\+TIMEOUT with the specified timeout (in milliseconds). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcppu_1_1ServerSocket_ac5f6da333208cce9ca4d5392259a0a6b}{set\+Tcp\+No\+Delay}} (bool)
+\begin{DoxyCompactList}\small\item\em Turns on/off TCP coalescence (useful in some cases to avoid delays). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classcppu_1_1Socket}{Socket}} $\ast$ \mbox{\hyperlink{classcppu_1_1ServerSocket_a23d038275576d0a969072eb334f7b84f}{create\+Socket}} (int sockfd)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TCP/\+IP server socket. This class implements a TCP/\+IP socket that waits for requests to come in over the network. AF\+\_\+\+INET connections following the IPv4 Internet protocol are supported. 
+
+\begin{DoxyNote}{Note}
+TCP/\+IP sockets do not preserve record boundaries, 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcppu_1_1SocketBuffer}{Socket\+Buffer}} for a solution. 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_a57138f5a7d2e8af35228c8985385c494}\label{classcppu_1_1ServerSocket_a57138f5a7d2e8af35228c8985385c494}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!ServerSocket@{ServerSocket}}
+\index{ServerSocket@{ServerSocket}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{ServerSocket()}{ServerSocket()}}
+{\footnotesize\ttfamily cppu\+::\+Server\+Socket\+::\+Server\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new server socket. Creates a listening socket that waits for connection requests by TCP/\+IP clients. 
+
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_a1a09b8b6c05087b84660e2b2ad93b557}\label{classcppu_1_1ServerSocket_a1a09b8b6c05087b84660e2b2ad93b557}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!````~ServerSocket@{$\sim$ServerSocket}}
+\index{````~ServerSocket@{$\sim$ServerSocket}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{$\sim$ServerSocket()}{~ServerSocket()}}
+{\footnotesize\ttfamily cppu\+::\+Server\+Socket\+::$\sim$\+Server\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_af08ebcb886fc778d195fb622f7b96b8b}\label{classcppu_1_1ServerSocket_af08ebcb886fc778d195fb622f7b96b8b}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!accept@{accept}}
+\index{accept@{accept}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcppu_1_1Socket}{Socket}} $\ast$ cppu\+::\+Server\+Socket\+::accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accepts a new connection request and returns the corresponding socket. By default, this function blocks the caller until a connection is present. 
+
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{classcppu_1_1Socket}{Socket}} or nullptr on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_a255dfdccba51c7cdbcb6733c6c3f6ffa}\label{classcppu_1_1ServerSocket_a255dfdccba51c7cdbcb6733c6c3f6ffa}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!bind@{bind}}
+\index{bind@{bind}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily int cppu\+::\+Server\+Socket\+::bind (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{int}]{backlog = {\ttfamily 50} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Assigns the socket to the local address. The socket must be bound before using it. 
+
+\begin{DoxyReturn}{Returns}
+0 on success or a negative value on error which is one of \mbox{\hyperlink{classcppu_1_1Socket_a49ea5cb079bd7ae97ecf7eb30c9d9e5f}{Socket\+::\+Errors}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_ae7647cfb5beaf504a846f6ecfdd197c4}\label{classcppu_1_1ServerSocket_ae7647cfb5beaf504a846f6ecfdd197c4}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!close@{close}}
+\index{close@{close}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily int cppu\+::\+Server\+Socket\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Closes the socket. 
+
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_a23d038275576d0a969072eb334f7b84f}\label{classcppu_1_1ServerSocket_a23d038275576d0a969072eb334f7b84f}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!createSocket@{createSocket}}
+\index{createSocket@{createSocket}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{createSocket()}{createSocket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcppu_1_1Socket}{Socket}} $\ast$ cppu\+::\+Server\+Socket\+::create\+Socket (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_a905d85f63fdca46ed5ee44eb00e211d1}\label{classcppu_1_1ServerSocket_a905d85f63fdca46ed5ee44eb00e211d1}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!descriptor@{descriptor}}
+\index{descriptor@{descriptor}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{descriptor()}{descriptor()}}
+{\footnotesize\ttfamily int cppu\+::\+Server\+Socket\+::descriptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the Unix descriptor of the socket. 
+
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_a9e64d9443686fcfdce6b2c4386597e3b}\label{classcppu_1_1ServerSocket_a9e64d9443686fcfdce6b2c4386597e3b}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!isClosed@{isClosed}}
+\index{isClosed@{isClosed}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{isClosed()}{isClosed()}}
+{\footnotesize\ttfamily bool cppu\+::\+Server\+Socket\+::is\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if the socket has been closed. 
+
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_a0fbd0ee42bcfecf2e749279c4b94b0b3}\label{classcppu_1_1ServerSocket_a0fbd0ee42bcfecf2e749279c4b94b0b3}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!setReceiveBufferSize@{setReceiveBufferSize}}
+\index{setReceiveBufferSize@{setReceiveBufferSize}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{setReceiveBufferSize()}{setReceiveBufferSize()}}
+{\footnotesize\ttfamily int cppu\+::\+Server\+Socket\+::set\+Receive\+Buffer\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Sets the SO\+\_\+\+RCVBUF option to the specified value. 
+
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_a09d0494cc0f65abe496b9c940d2920ed}\label{classcppu_1_1ServerSocket_a09d0494cc0f65abe496b9c940d2920ed}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!setReuseAddress@{setReuseAddress}}
+\index{setReuseAddress@{setReuseAddress}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{setReuseAddress()}{setReuseAddress()}}
+{\footnotesize\ttfamily int cppu\+::\+Server\+Socket\+::set\+Reuse\+Address (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+Enables/disables the SO\+\_\+\+REUSEADDR socket option. 
+
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_a0ceb984eab0cdd9c7c8e62658a521175}\label{classcppu_1_1ServerSocket_a0ceb984eab0cdd9c7c8e62658a521175}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!setSoTimeout@{setSoTimeout}}
+\index{setSoTimeout@{setSoTimeout}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{setSoTimeout()}{setSoTimeout()}}
+{\footnotesize\ttfamily int cppu\+::\+Server\+Socket\+::set\+So\+Timeout (\begin{DoxyParamCaption}\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Enables/disables SO\+\_\+\+TIMEOUT with the specified timeout (in milliseconds). 
+
+\mbox{\Hypertarget{classcppu_1_1ServerSocket_ac5f6da333208cce9ca4d5392259a0a6b}\label{classcppu_1_1ServerSocket_ac5f6da333208cce9ca4d5392259a0a6b}} 
+\index{cppu::ServerSocket@{cppu::ServerSocket}!setTcpNoDelay@{setTcpNoDelay}}
+\index{setTcpNoDelay@{setTcpNoDelay}!cppu::ServerSocket@{cppu::ServerSocket}}
+\doxysubsubsection{\texorpdfstring{setTcpNoDelay()}{setTcpNoDelay()}}
+{\footnotesize\ttfamily int cppu\+::\+Server\+Socket\+::set\+Tcp\+No\+Delay (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+Turns on/off TCP coalescence (useful in some cases to avoid delays). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{cppsocket_8h}{cppsocket.\+h}}\item 
+src/\mbox{\hyperlink{socket_8cpp}{socket.\+cpp}}\end{DoxyCompactItemize}

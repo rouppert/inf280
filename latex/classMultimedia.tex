@@ -1,0 +1,225 @@
+\hypertarget{classMultimedia}{}\doxysection{Multimedia Class Reference}
+\label{classMultimedia}\index{Multimedia@{Multimedia}}
+
+
+This class describes a generic \mbox{\hyperlink{classMultimedia}{Multimedia}} object. A \mbox{\hyperlink{classMultimedia}{Multimedia}} object is only described by a name and a pathname. This class wille be further used for heritage.  
+
+
+
+
+{\ttfamily \#include $<$multimedia.\+h$>$}
+
+
+
+Inheritance diagram for Multimedia\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classMultimedia__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classMultimedia_ace0804f8019ed84df1f3c18eb28cf189}{get\+Name}} () const
+\item 
+string \mbox{\hyperlink{classMultimedia_a6d8a210061b18bddc936deb9fba6e439}{get\+Path}} () const
+\item 
+virtual string \mbox{\hyperlink{classMultimedia_a297b86e903b48d84acb3590fc9f79ba1}{get\+Class\+Name}} () const
+\item 
+void \mbox{\hyperlink{classMultimedia_a3ae851c27e4ea2e74ec79c2203d9d82d}{set\+Name}} (string name\+\_\+)
+\item 
+void \mbox{\hyperlink{classMultimedia_ab0707447b7633f243e0c29780820950f}{set\+Path}} (string path\+\_\+)
+\item 
+virtual string \mbox{\hyperlink{classMultimedia_a4eed873fe92b1b6a84fbb1a065ebffea}{display\+Param}} (ostream \&out) const
+\begin{DoxyCompactList}\small\item\em Displays name and pathname on \char`\"{}out\char`\"{}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMultimedia_a502744cc84895fa629cb7c211b21b1ca}{play}} () const
+\begin{DoxyCompactList}\small\item\em Plays \mbox{\hyperlink{classMultimedia}{Multimedia}} object. Only used for heritage. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMultimedia_ada7f3879d420c354f90ba471ea849a19}{save\+In\+File}} (std\+::ostream \&f) const
+\begin{DoxyCompactList}\small\item\em Saves \mbox{\hyperlink{classMultimedia}{Multimedia}} object\textquotesingle{}s parameters in given file f. Parameters are written as in following example. \char`\"{}\+Photo example multimedia/example.\+jpeg\char`\"{}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMultimedia_a2ac9328ec37ed15265c762711b9cd88b}{create\+From\+File}} (string parameters)
+\begin{DoxyCompactList}\small\item\em Reads given line in a file, on which parameters of \mbox{\hyperlink{classMultimedia}{Multimedia}} Object are saved, and creates matching object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultimedia_ab280f9ce1d0a1291c9b1ab876e854c94}{$\sim$\+Multimedia}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMultimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}} ()
+\item 
+\mbox{\hyperlink{classMultimedia_a3bf28dcaacc4b1e41f0982a298372080}{Multimedia}} (string name\+\_\+, string pathname\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classMultimedia}{Multimedia}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMultimedia_a942de9fdcc4f73565e9c61875502ee88}{Generic\+Table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a generic \mbox{\hyperlink{classMultimedia}{Multimedia}} object. A \mbox{\hyperlink{classMultimedia}{Multimedia}} object is only described by a name and a pathname. This class wille be further used for heritage. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classPhoto}{Photo}}, 
+
+\mbox{\hyperlink{classVideo}{Video}}, 
+
+\mbox{\hyperlink{classFilm}{Film}}. 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMultimedia_a7106753d618df92d53b89328b7ecfe7f}\label{classMultimedia_a7106753d618df92d53b89328b7ecfe7f}} 
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{Multimedia()}{Multimedia()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Multimedia\+::\+Multimedia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classMultimedia_a3bf28dcaacc4b1e41f0982a298372080}\label{classMultimedia_a3bf28dcaacc4b1e41f0982a298372080}} 
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{Multimedia()}{Multimedia()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Multimedia\+::\+Multimedia (\begin{DoxyParamCaption}\item[{string}]{name\+\_\+,  }\item[{string}]{pathname\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classMultimedia}{Multimedia}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+\_\+} & \+: name of \mbox{\hyperlink{classMultimedia}{Multimedia}}. \\
+\hline
+{\em pathname\+\_\+} & \+: location of \mbox{\hyperlink{classMultimedia}{Multimedia}} object on disk. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMultimedia_ab280f9ce1d0a1291c9b1ab876e854c94}\label{classMultimedia_ab280f9ce1d0a1291c9b1ab876e854c94}} 
+\index{Multimedia@{Multimedia}!````~Multimedia@{$\sim$Multimedia}}
+\index{````~Multimedia@{$\sim$Multimedia}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{$\sim$Multimedia()}{~Multimedia()}}
+{\footnotesize\ttfamily Multimedia\+::$\sim$\+Multimedia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMultimedia_a2ac9328ec37ed15265c762711b9cd88b}\label{classMultimedia_a2ac9328ec37ed15265c762711b9cd88b}} 
+\index{Multimedia@{Multimedia}!createFromFile@{createFromFile}}
+\index{createFromFile@{createFromFile}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{createFromFile()}{createFromFile()}}
+{\footnotesize\ttfamily void Multimedia\+::create\+From\+File (\begin{DoxyParamCaption}\item[{string}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reads given line in a file, on which parameters of \mbox{\hyperlink{classMultimedia}{Multimedia}} Object are saved, and creates matching object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & line on which parameters of the object are written. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classVideo_a3a754d5381e3d306e0a8081f38d5cf0b}{Video}}, \mbox{\hyperlink{classPhoto_aa2d49c68d614861518fc687a1b9eb4f6}{Photo}}, and \mbox{\hyperlink{classFilm_adc09db9fdeb5693763958fee58b94c88}{Film}}.
+
+\mbox{\Hypertarget{classMultimedia_a4eed873fe92b1b6a84fbb1a065ebffea}\label{classMultimedia_a4eed873fe92b1b6a84fbb1a065ebffea}} 
+\index{Multimedia@{Multimedia}!displayParam@{displayParam}}
+\index{displayParam@{displayParam}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{displayParam()}{displayParam()}}
+{\footnotesize\ttfamily virtual string Multimedia\+::display\+Param (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Displays name and pathname on \char`\"{}out\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Name and pathname of \mbox{\hyperlink{classMultimedia}{Multimedia}} object. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classFilm_a34d29064b8a56378c1d2113ea15d26c8}{Film}}, \mbox{\hyperlink{classVideo_ae83cabb6a6f55688c83826e7af6146af}{Video}}, and \mbox{\hyperlink{classPhoto_a23ecee6b4692a1d3c3db9456d243c697}{Photo}}.
+
+\mbox{\Hypertarget{classMultimedia_a297b86e903b48d84acb3590fc9f79ba1}\label{classMultimedia_a297b86e903b48d84acb3590fc9f79ba1}} 
+\index{Multimedia@{Multimedia}!getClassName@{getClassName}}
+\index{getClassName@{getClassName}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{getClassName()}{getClassName()}}
+{\footnotesize\ttfamily virtual string Multimedia\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classVideo_ac29129c173fb98306ce618e537a08637}{Video}}, \mbox{\hyperlink{classPhoto_a0811b00dc4a2c138efbeb600165d2744}{Photo}}, and \mbox{\hyperlink{classFilm_a6e2b00b6a47bd58b925cca372167697c}{Film}}.
+
+\mbox{\Hypertarget{classMultimedia_ace0804f8019ed84df1f3c18eb28cf189}\label{classMultimedia_ace0804f8019ed84df1f3c18eb28cf189}} 
+\index{Multimedia@{Multimedia}!getName@{getName}}
+\index{getName@{getName}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Multimedia\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMultimedia_a6d8a210061b18bddc936deb9fba6e439}\label{classMultimedia_a6d8a210061b18bddc936deb9fba6e439}} 
+\index{Multimedia@{Multimedia}!getPath@{getPath}}
+\index{getPath@{getPath}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily string Multimedia\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMultimedia_a502744cc84895fa629cb7c211b21b1ca}\label{classMultimedia_a502744cc84895fa629cb7c211b21b1ca}} 
+\index{Multimedia@{Multimedia}!play@{play}}
+\index{play@{play}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual void Multimedia\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Plays \mbox{\hyperlink{classMultimedia}{Multimedia}} object. Only used for heritage. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classVideo_a89e11497f4f200f387805b10bd42922d}{Video}}, and \mbox{\hyperlink{classPhoto_a98b55224b5f9bd016cb08aa2e9a64e46}{Photo}}.
+
+\mbox{\Hypertarget{classMultimedia_ada7f3879d420c354f90ba471ea849a19}\label{classMultimedia_ada7f3879d420c354f90ba471ea849a19}} 
+\index{Multimedia@{Multimedia}!saveInFile@{saveInFile}}
+\index{saveInFile@{saveInFile}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{saveInFile()}{saveInFile()}}
+{\footnotesize\ttfamily virtual void Multimedia\+::save\+In\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Saves \mbox{\hyperlink{classMultimedia}{Multimedia}} object\textquotesingle{}s parameters in given file f. Parameters are written as in following example. \char`\"{}\+Photo example multimedia/example.\+jpeg\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \+: file to save object in. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classVideo_a18357be925311a5a2f5aadccb52908ca}{Video}}, \mbox{\hyperlink{classPhoto_a2d0551f90ff69a856868f4f256fab4ac}{Photo}}, and \mbox{\hyperlink{classFilm_ab34aa3a07888366031f6dc7338d0443e}{Film}}.
+
+\mbox{\Hypertarget{classMultimedia_a3ae851c27e4ea2e74ec79c2203d9d82d}\label{classMultimedia_a3ae851c27e4ea2e74ec79c2203d9d82d}} 
+\index{Multimedia@{Multimedia}!setName@{setName}}
+\index{setName@{setName}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Multimedia\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMultimedia_ab0707447b7633f243e0c29780820950f}\label{classMultimedia_ab0707447b7633f243e0c29780820950f}} 
+\index{Multimedia@{Multimedia}!setPath@{setPath}}
+\index{setPath@{setPath}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily void Multimedia\+::set\+Path (\begin{DoxyParamCaption}\item[{string}]{path\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classMultimedia_a942de9fdcc4f73565e9c61875502ee88}\label{classMultimedia_a942de9fdcc4f73565e9c61875502ee88}} 
+\index{Multimedia@{Multimedia}!GenericTable@{GenericTable}}
+\index{GenericTable@{GenericTable}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{GenericTable}{GenericTable}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classGenericTable}{Generic\+Table}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{multimedia_8h}{multimedia.\+h}}\item 
+src/\mbox{\hyperlink{multimedia_8cpp}{multimedia.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="Photo" name="Photo">
+<area shape="rect" id="node1" title="This class describes a Photo. A Photo is a Multimedia object, which has a longitude and a latitude." alt="" coords="24,80,83,107"/>
+<area shape="rect" id="node2" href="$classMultimedia.html" title="This class describes a generic Multimedia object. A Multimedia object is only described by a name and..." alt="" coords="5,5,101,32"/>
+</map>

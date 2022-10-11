@@ -1,0 +1,65 @@
+\hypertarget{server_8h}{}\doxysection{include/server.h File Reference}
+\label{server_8h}\index{include/server.h@{include/server.h}}
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}cppsocket.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}generic\+Table.\+h\char`\"{}}\newline
+Include dependency graph for server.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{server_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcppu_1_1TCPServer}{cppu\+::\+TCPServer}}
+\begin{DoxyCompactList}\small\item\em TCP/\+IP IPv4 server. The server supports TCP/\+IP AF\+\_\+\+INET connections (following the IPv4 Internet protocol) with multiple clients. One thread is used per client. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcppu_1_1TCPServer_1_1Callback}{cppu\+::\+TCPServer\+::\+Callback}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structcppu_1_1TCPServer_1_1Callback}{Callback}} interface. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcppu_1_1TCPServer_1_1CallbackMethod}{cppu\+::\+TCPServer\+::\+Callback\+Method$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classcppu_1_1TCPLock}{cppu\+::\+TCPLock}}
+\begin{DoxyCompactList}\small\item\em Locks the server in read mode or in write mode. Must be created {\itshape in the stack} by the callback method. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcppu_1_1TCPConnection}{cppu\+::\+TCPConnection}}
+\begin{DoxyCompactList}\small\item\em Connection with a given client. Each \mbox{\hyperlink{classcppu_1_1TCPConnection}{TCPConnection}} uses a different thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacecppu}{cppu}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{server_8h_a19ddb486aac0896249c46eb9e9159d6a}{parse\+Request}} (const string \&request)
+\begin{DoxyCompactList}\small\item\em Extracts informations from a request sent by the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{server_8h_a19ddb486aac0896249c46eb9e9159d6a}\label{server_8h_a19ddb486aac0896249c46eb9e9159d6a}} 
+\index{server.h@{server.h}!parseRequest@{parseRequest}}
+\index{parseRequest@{parseRequest}!server.h@{server.h}}
+\doxysubsubsection{\texorpdfstring{parseRequest()}{parseRequest()}}
+{\footnotesize\ttfamily string parse\+Request (\begin{DoxyParamCaption}\item[{const string \&}]{request }\end{DoxyParamCaption})}
+
+
+
+Extracts informations from a request sent by the client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Request of the client asking for an action on a multimedia content.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A parsed request. 
+\end{DoxyReturn}

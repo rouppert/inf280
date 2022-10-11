@@ -1,0 +1,75 @@
+\hypertarget{classcppu_1_1TCPConnection}{}\doxysection{cppu\+::TCPConnection Class Reference}
+\label{classcppu_1_1TCPConnection}\index{cppu::TCPConnection@{cppu::TCPConnection}}
+
+
+Connection with a given client. Each \mbox{\hyperlink{classcppu_1_1TCPConnection}{TCPConnection}} uses a different thread.  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+
+
+Inheritance diagram for cppu\+::TCPConnection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classcppu_1_1TCPConnection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cppu\+::TCPConnection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcppu_1_1TCPConnection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcppu_1_1TCPServer}{TCPServer}} \& \mbox{\hyperlink{classcppu_1_1TCPConnection_a4186946c7c22e3c2cebe3a97aa78f5f7}{server}} ()
+\item 
+pthread\+\_\+t \mbox{\hyperlink{classcppu_1_1TCPConnection_a4663875b80fced790502880c72e6e672}{thread}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcppu_1_1TCPConnection_ae4cfdb1814d91a8d28dadb49adda68f0}{TCPServer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Connection with a given client. Each \mbox{\hyperlink{classcppu_1_1TCPConnection}{TCPConnection}} uses a different thread. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcppu_1_1TCPConnection_a4186946c7c22e3c2cebe3a97aa78f5f7}\label{classcppu_1_1TCPConnection_a4186946c7c22e3c2cebe3a97aa78f5f7}} 
+\index{cppu::TCPConnection@{cppu::TCPConnection}!server@{server}}
+\index{server@{server}!cppu::TCPConnection@{cppu::TCPConnection}}
+\doxysubsubsection{\texorpdfstring{server()}{server()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcppu_1_1TCPServer}{TCPServer}}\& cppu\+::\+TCPConnection\+::server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcppu_1_1TCPConnection_a4663875b80fced790502880c72e6e672}\label{classcppu_1_1TCPConnection_a4663875b80fced790502880c72e6e672}} 
+\index{cppu::TCPConnection@{cppu::TCPConnection}!thread@{thread}}
+\index{thread@{thread}!cppu::TCPConnection@{cppu::TCPConnection}}
+\doxysubsubsection{\texorpdfstring{thread()}{thread()}}
+{\footnotesize\ttfamily pthread\+\_\+t cppu\+::\+TCPConnection\+::thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classcppu_1_1TCPConnection_ae4cfdb1814d91a8d28dadb49adda68f0}\label{classcppu_1_1TCPConnection_ae4cfdb1814d91a8d28dadb49adda68f0}} 
+\index{cppu::TCPConnection@{cppu::TCPConnection}!TCPServer@{TCPServer}}
+\index{TCPServer@{TCPServer}!cppu::TCPConnection@{cppu::TCPConnection}}
+\doxysubsubsection{\texorpdfstring{TCPServer}{TCPServer}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classcppu_1_1TCPServer}{TCPServer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{server_8h}{server.\+h}}\item 
+src/\mbox{\hyperlink{tcpserver_8cpp}{tcpserver.\+cpp}}\end{DoxyCompactItemize}

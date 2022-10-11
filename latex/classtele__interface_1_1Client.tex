@@ -1,0 +1,53 @@
+\hypertarget{classtele__interface_1_1Client}{}\doxysection{tele\+\_\+interface.\+Client Class Reference}
+\label{classtele__interface_1_1Client}\index{tele\_interface.Client@{tele\_interface.Client}}
+
+
+Collaboration diagram for tele\+\_\+interface.\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classtele__interface_1_1Client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtele__interface_1_1Client_a53efa9a53ba2af0d53d8d428223cffe4}{Client}} (String host, int port)  throws Unknown\+Host\+Exception, IOException 
+\item 
+String \mbox{\hyperlink{classtele__interface_1_1Client_aee2eae9ed6d74c6fbfc1266117e7fc53}{send}} (String request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classtele__interface_1_1Client_a3291c6fa7f0d487ef8fc6271cab3ea08}{main}} (String argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtele__interface_1_1Client_a53efa9a53ba2af0d53d8d428223cffe4}\label{classtele__interface_1_1Client_a53efa9a53ba2af0d53d8d428223cffe4}} 
+\index{tele\_interface.Client@{tele\_interface.Client}!Client@{Client}}
+\index{Client@{Client}!tele\_interface.Client@{tele\_interface.Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily tele\+\_\+interface.\+Client.\+Client (\begin{DoxyParamCaption}\item[{String}]{host,  }\item[{int}]{port }\end{DoxyParamCaption}) throws Unknown\+Host\+Exception, IOException\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialise la connexion. Renvoie une exception en cas d\textquotesingle{}erreur. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtele__interface_1_1Client_a3291c6fa7f0d487ef8fc6271cab3ea08}\label{classtele__interface_1_1Client_a3291c6fa7f0d487ef8fc6271cab3ea08}} 
+\index{tele\_interface.Client@{tele\_interface.Client}!main@{main}}
+\index{main@{main}!tele\_interface.Client@{tele\_interface.Client}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void tele\+\_\+interface.\+Client.\+main (\begin{DoxyParamCaption}\item[{String}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Lit une requete depuis le Terminal, envoie cette requete au serveur, recupere sa reponse et l\textquotesingle{}affiche sur le Terminal. Noter que le programme bloque si le serveur ne repond pas. \mbox{\Hypertarget{classtele__interface_1_1Client_aee2eae9ed6d74c6fbfc1266117e7fc53}\label{classtele__interface_1_1Client_aee2eae9ed6d74c6fbfc1266117e7fc53}} 
+\index{tele\_interface.Client@{tele\_interface.Client}!send@{send}}
+\index{send@{send}!tele\_interface.Client@{tele\_interface.Client}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily String tele\+\_\+interface.\+Client.\+send (\begin{DoxyParamCaption}\item[{String}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Envoie une requete au server et retourne sa reponse. Noter que la methode bloque si le serveur ne repond pas. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tele\+\_\+interface/\mbox{\hyperlink{Client_8java}{Client.\+java}}\end{DoxyCompactItemize}

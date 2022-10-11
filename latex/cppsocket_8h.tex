@@ -1,0 +1,48 @@
+\hypertarget{cppsocket_8h}{}\doxysection{include/cppsocket.h File Reference}
+\label{cppsocket_8h}\index{include/cppsocket.h@{include/cppsocket.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+Include dependency graph for cppsocket.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{cppsocket_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cppsocket_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcppu_1_1Socket}{cppu\+::\+Socket}}
+\begin{DoxyCompactList}\small\item\em TCP/\+IP or UDP/\+Datagram socket. This class encapsulates a TCP/\+IP or UDP/\+Datagram socket. AF\+\_\+\+INET connections following the IPv4 Internet protocol are supported. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcppu_1_1ServerSocket}{cppu\+::\+Server\+Socket}}
+\begin{DoxyCompactList}\small\item\em TCP/\+IP server socket. This class implements a TCP/\+IP socket that waits for requests to come in over the network. AF\+\_\+\+INET connections following the IPv4 Internet protocol are supported. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcppu_1_1SocketBuffer}{cppu\+::\+Socket\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Preserves record boundaries when exchanging data between connected TCP/\+IP sockets. This class ensures that one call to \mbox{\hyperlink{classcppu_1_1SocketBuffer_a92ae0351aaee8719d34e8c4618495d59}{write\+Line()}} corresponds to one and exactly one call to \mbox{\hyperlink{classcppu_1_1SocketBuffer_a222769d3776b9cbd3a727ee1f0e60358}{read\+Line()}} on the other side. This differs from the behavior of \mbox{\hyperlink{classcppu_1_1Socket_aeac77f859159715e2d63a5a0dc118788}{Socket\+::send()}} and \mbox{\hyperlink{classcppu_1_1Socket_a37c382af52cc02f92c0e19a0c6e0e04f}{Socket\+::receive()}} because TCP/\+IP connected sockets do not preserve record boundaries. \mbox{\hyperlink{classcppu_1_1SocketBuffer_a92ae0351aaee8719d34e8c4618495d59}{write\+Line()}} and \mbox{\hyperlink{classcppu_1_1SocketBuffer_a222769d3776b9cbd3a727ee1f0e60358}{read\+Line()}} solve this problem by automatically adding and searching for a separator between successive lines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacecppu}{cppu}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cppsocket_8h_a4338f74b616134f031b0791106fbb5c1}{\+\_\+\+NO\+\_\+\+SIGPIPE}}(flags)~(flags)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{cppsocket_8h_a4338f74b616134f031b0791106fbb5c1}\label{cppsocket_8h_a4338f74b616134f031b0791106fbb5c1}} 
+\index{cppsocket.h@{cppsocket.h}!\_NO\_SIGPIPE@{\_NO\_SIGPIPE}}
+\index{\_NO\_SIGPIPE@{\_NO\_SIGPIPE}!cppsocket.h@{cppsocket.h}}
+\doxysubsubsection{\texorpdfstring{\_NO\_SIGPIPE}{\_NO\_SIGPIPE}}
+{\footnotesize\ttfamily \#define \+\_\+\+NO\+\_\+\+SIGPIPE(\begin{DoxyParamCaption}\item[{}]{flags }\end{DoxyParamCaption})~(flags)}
+

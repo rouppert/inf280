@@ -1,0 +1,231 @@
+\hypertarget{classFilm}{}\doxysection{Film Class Reference}
+\label{classFilm}\index{Film@{Film}}
+
+
+This class describes a film. A film is a video, which is divided into chapters.  
+
+
+
+
+{\ttfamily \#include $<$film.\+h$>$}
+
+
+
+Inheritance diagram for Film\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classFilm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Film\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classFilm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classFilm_a32935beff8fadcfdbbc06b85b3f9b3c4}{set\+Chapters\+Length}} (int chap\+Leng\+\_\+\mbox{[}$\,$\mbox{]}, int chap\+Numb\+\_\+)
+\begin{DoxyCompactList}\small\item\em Changes chapters plan in the film. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFilm_a7b057774ec6bdf0d5a6675a0c081dc71}{get\+Chapters\+Number}} () const
+\item 
+const int $\ast$ \mbox{\hyperlink{classFilm_a54a3f36fa8052b7818e43ba5a3f40d25}{get\+Chapters\+Length}} () const
+\item 
+string \mbox{\hyperlink{classFilm_a6e2b00b6a47bd58b925cca372167697c}{get\+Class\+Name}} () const override
+\item 
+string \mbox{\hyperlink{classFilm_a567b8c7dc70d6cc6b91c03b394a74754}{display\+Chapters\+Length}} () const
+\item 
+void \mbox{\hyperlink{classFilm_adc09db9fdeb5693763958fee58b94c88}{create\+From\+File}} (string parameters) override
+\begin{DoxyCompactList}\small\item\em Reads given line in a file, on which parameters of \mbox{\hyperlink{classMultimedia}{Multimedia}} Object are saved, and creates matching object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFilm_ab34aa3a07888366031f6dc7338d0443e}{save\+In\+File}} (std\+::ostream \&f) const override
+\begin{DoxyCompactList}\small\item\em Saves \mbox{\hyperlink{classMultimedia}{Multimedia}} object\textquotesingle{}s parameters in given file f. Parameters are written as in following example. \char`\"{}\+Photo example multimedia/example.\+jpeg\char`\"{}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classFilm_a34d29064b8a56378c1d2113ea15d26c8}{display\+Param}} (ostream \&out=cout) const override
+\begin{DoxyCompactList}\small\item\em Displays parameters of the video (name, pathname, length) on \char`\"{}out\char`\"{}. Overrides original \mbox{\hyperlink{classMultimedia}{Multimedia}} method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFilm_a8dab653f8a6c0635ca5ddbe0bbdd9a25}{$\sim$\+Film}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFilm_af2835db2b0ef3a87aaa3222f4d9d1ae3}{Film}} ()
+\item 
+\mbox{\hyperlink{classFilm_a031bfa308b36115c37dac4bc7f531f35}{Film}} (int length\+\_\+, string name\+\_\+, string pathname\+\_\+, int chap\+Numb\+\_\+, int chap\+Leng\+\_\+\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classFilm}{Film}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classFilm_a942de9fdcc4f73565e9c61875502ee88}{Generic\+Table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a film. A film is a video, which is divided into chapters. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classVideo}{Video}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFilm_af2835db2b0ef3a87aaa3222f4d9d1ae3}\label{classFilm_af2835db2b0ef3a87aaa3222f4d9d1ae3}} 
+\index{Film@{Film}!Film@{Film}}
+\index{Film@{Film}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{Film()}{Film()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Film\+::\+Film (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classFilm_a031bfa308b36115c37dac4bc7f531f35}\label{classFilm_a031bfa308b36115c37dac4bc7f531f35}} 
+\index{Film@{Film}!Film@{Film}}
+\index{Film@{Film}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{Film()}{Film()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Film\+::\+Film (\begin{DoxyParamCaption}\item[{int}]{length\+\_\+,  }\item[{string}]{name\+\_\+,  }\item[{string}]{pathname\+\_\+,  }\item[{int}]{chap\+Numb\+\_\+,  }\item[{int}]{chap\+Leng\+\_\+\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Construct a new \mbox{\hyperlink{classFilm}{Film}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chap\+Numb\+\_\+} & \+: number of chapters in the film. \\
+\hline
+{\em chap\+Leng\+\_\+} & \+: table of length of every chapter in the film. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFilm_a8dab653f8a6c0635ca5ddbe0bbdd9a25}\label{classFilm_a8dab653f8a6c0635ca5ddbe0bbdd9a25}} 
+\index{Film@{Film}!````~Film@{$\sim$Film}}
+\index{````~Film@{$\sim$Film}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{$\sim$Film()}{~Film()}}
+{\footnotesize\ttfamily Film\+::$\sim$\+Film (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFilm_adc09db9fdeb5693763958fee58b94c88}\label{classFilm_adc09db9fdeb5693763958fee58b94c88}} 
+\index{Film@{Film}!createFromFile@{createFromFile}}
+\index{createFromFile@{createFromFile}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{createFromFile()}{createFromFile()}}
+{\footnotesize\ttfamily void Film\+::create\+From\+File (\begin{DoxyParamCaption}\item[{string}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reads given line in a file, on which parameters of \mbox{\hyperlink{classMultimedia}{Multimedia}} Object are saved, and creates matching object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & line on which parameters of the object are written. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a2ac9328ec37ed15265c762711b9cd88b}{Multimedia}}.
+
+\mbox{\Hypertarget{classFilm_a567b8c7dc70d6cc6b91c03b394a74754}\label{classFilm_a567b8c7dc70d6cc6b91c03b394a74754}} 
+\index{Film@{Film}!displayChaptersLength@{displayChaptersLength}}
+\index{displayChaptersLength@{displayChaptersLength}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{displayChaptersLength()}{displayChaptersLength()}}
+{\footnotesize\ttfamily string Film\+::display\+Chapters\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classFilm_a34d29064b8a56378c1d2113ea15d26c8}\label{classFilm_a34d29064b8a56378c1d2113ea15d26c8}} 
+\index{Film@{Film}!displayParam@{displayParam}}
+\index{displayParam@{displayParam}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{displayParam()}{displayParam()}}
+{\footnotesize\ttfamily string Film\+::display\+Param (\begin{DoxyParamCaption}\item[{ostream \&}]{out = {\ttfamily cout} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays parameters of the video (name, pathname, length) on \char`\"{}out\char`\"{}. Overrides original \mbox{\hyperlink{classMultimedia}{Multimedia}} method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \+: output stream for parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parameters of the video (name, pathname, length). 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classVideo_ae83cabb6a6f55688c83826e7af6146af}{Video}}.
+
+\mbox{\Hypertarget{classFilm_a54a3f36fa8052b7818e43ba5a3f40d25}\label{classFilm_a54a3f36fa8052b7818e43ba5a3f40d25}} 
+\index{Film@{Film}!getChaptersLength@{getChaptersLength}}
+\index{getChaptersLength@{getChaptersLength}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{getChaptersLength()}{getChaptersLength()}}
+{\footnotesize\ttfamily const int$\ast$ Film\+::get\+Chapters\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+chapters length table. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFilm_a7b057774ec6bdf0d5a6675a0c081dc71}\label{classFilm_a7b057774ec6bdf0d5a6675a0c081dc71}} 
+\index{Film@{Film}!getChaptersNumber@{getChaptersNumber}}
+\index{getChaptersNumber@{getChaptersNumber}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{getChaptersNumber()}{getChaptersNumber()}}
+{\footnotesize\ttfamily int Film\+::get\+Chapters\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+size of the film\textquotesingle{}s chapters table. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFilm_a6e2b00b6a47bd58b925cca372167697c}\label{classFilm_a6e2b00b6a47bd58b925cca372167697c}} 
+\index{Film@{Film}!getClassName@{getClassName}}
+\index{getClassName@{getClassName}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{getClassName()}{getClassName()}}
+{\footnotesize\ttfamily string Film\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a297b86e903b48d84acb3590fc9f79ba1}{Multimedia}}.
+
+\mbox{\Hypertarget{classFilm_ab34aa3a07888366031f6dc7338d0443e}\label{classFilm_ab34aa3a07888366031f6dc7338d0443e}} 
+\index{Film@{Film}!saveInFile@{saveInFile}}
+\index{saveInFile@{saveInFile}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{saveInFile()}{saveInFile()}}
+{\footnotesize\ttfamily void Film\+::save\+In\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Saves \mbox{\hyperlink{classMultimedia}{Multimedia}} object\textquotesingle{}s parameters in given file f. Parameters are written as in following example. \char`\"{}\+Photo example multimedia/example.\+jpeg\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \+: file to save object in. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_ada7f3879d420c354f90ba471ea849a19}{Multimedia}}.
+
+\mbox{\Hypertarget{classFilm_a32935beff8fadcfdbbc06b85b3f9b3c4}\label{classFilm_a32935beff8fadcfdbbc06b85b3f9b3c4}} 
+\index{Film@{Film}!setChaptersLength@{setChaptersLength}}
+\index{setChaptersLength@{setChaptersLength}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{setChaptersLength()}{setChaptersLength()}}
+{\footnotesize\ttfamily void Film\+::set\+Chapters\+Length (\begin{DoxyParamCaption}\item[{int}]{chap\+Leng\+\_\+\mbox{[}$\,$\mbox{]},  }\item[{int}]{chap\+Numb\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Changes chapters plan in the film. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chap\+Leng\+\_\+} & \+: new table of chapters length. \\
+\hline
+{\em chap\+Numb\+\_\+} & \+: size of this table. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classFilm_a942de9fdcc4f73565e9c61875502ee88}\label{classFilm_a942de9fdcc4f73565e9c61875502ee88}} 
+\index{Film@{Film}!GenericTable@{GenericTable}}
+\index{GenericTable@{GenericTable}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{GenericTable}{GenericTable}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classGenericTable}{Generic\+Table}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{film_8h}{film.\+h}}\item 
+src/\mbox{\hyperlink{film_8cpp}{film.\+cpp}}\end{DoxyCompactItemize}

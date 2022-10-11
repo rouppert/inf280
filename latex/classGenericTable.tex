@@ -1,0 +1,106 @@
+\hypertarget{classGenericTable}{}\doxysection{Generic\+Table Class Reference}
+\label{classGenericTable}\index{GenericTable@{GenericTable}}
+
+
+This class describes a table of objects. Thes objects could be either groups or multimedia objects (video, photo, ...).  
+
+
+
+
+{\ttfamily \#include $<$generic\+Table.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{classMultimedia}{Multimedia}} $\ast$ $>$\+::iterator \mbox{\hyperlink{classGenericTable_ad860bb9796c692c78398f2289d8bcb17}{get\+Table\+Begin}} ()
+\item 
+map$<$ string, \mbox{\hyperlink{classMultimedia}{Multimedia}} $\ast$ $>$\+::iterator \mbox{\hyperlink{classGenericTable_a46f003dc304d46bc033daa1082b7158f}{get\+Table\+End}} ()
+\item 
+const \mbox{\hyperlink{classPhoto}{Photo}} $\ast$ \mbox{\hyperlink{classGenericTable_a445358b8f83ca7729e49e94a7b877e7d}{create\+Photo}} (int long\+\_\+, int lat\+\_\+, string name\+\_\+, string pathname\+\_\+)
+\item 
+const \mbox{\hyperlink{classVideo}{Video}} $\ast$ \mbox{\hyperlink{classGenericTable_aae4c693c19bc37f428ae30fa410742fd}{create\+Video}} (int length\+\_\+, string name\+\_\+, string pathname\+\_\+)
+\item 
+const \mbox{\hyperlink{classFilm}{Film}} $\ast$ \mbox{\hyperlink{classGenericTable_a5b84959e0edd7d635a898f2fc446a16b}{create\+Film}} (int length\+\_\+, string name\+\_\+, string pathname\+\_\+, int chap\+Numb\+\_\+, int chap\+Leng\+\_\+\mbox{[}$\,$\mbox{]})
+\item 
+const \mbox{\hyperlink{classGroup}{Group}} $\ast$ \mbox{\hyperlink{classGenericTable_a001747e3eb02ce00a63b953013adb9fc}{create\+Group}} (initializer\+\_\+list$<$ \mbox{\hyperlink{classMultimedia}{Multimedia}} $\ast$ $>$ init, string name\+\_\+)
+\item 
+\mbox{\hyperlink{classMultimedia}{Multimedia}} $\ast$ \mbox{\hyperlink{classGenericTable_ad8afdfc4782fa924cd26567c8dff1f21}{search\+Multimedia}} (string name\+\_\+)
+\item 
+\mbox{\hyperlink{classGroup}{Group}} $\ast$ \mbox{\hyperlink{classGenericTable_a1ab1a4d0b7f0e90d02c1bb6df1bae319}{search\+Group}} (string name\+\_\+)
+\item 
+void \mbox{\hyperlink{classGenericTable_abedadbb357a53abbdace27066f2e21d2}{create\+Object}} (istream \&f)
+\item 
+void \mbox{\hyperlink{classGenericTable_a2083fb480456d6bea826d1b20a63c872}{save\+Object}} (ostream \&f, string name\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a table of objects. Thes objects could be either groups or multimedia objects (video, photo, ...). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenericTable_a5b84959e0edd7d635a898f2fc446a16b}\label{classGenericTable_a5b84959e0edd7d635a898f2fc446a16b}} 
+\index{GenericTable@{GenericTable}!createFilm@{createFilm}}
+\index{createFilm@{createFilm}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{createFilm()}{createFilm()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classFilm}{Film}} $\ast$ Generic\+Table\+::create\+Film (\begin{DoxyParamCaption}\item[{int}]{length\+\_\+,  }\item[{string}]{name\+\_\+,  }\item[{string}]{pathname\+\_\+,  }\item[{int}]{chap\+Numb\+\_\+,  }\item[{int}]{chap\+Leng\+\_\+\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGenericTable_a001747e3eb02ce00a63b953013adb9fc}\label{classGenericTable_a001747e3eb02ce00a63b953013adb9fc}} 
+\index{GenericTable@{GenericTable}!createGroup@{createGroup}}
+\index{createGroup@{createGroup}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{createGroup()}{createGroup()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classGroup}{Group}} $\ast$ Generic\+Table\+::create\+Group (\begin{DoxyParamCaption}\item[{initializer\+\_\+list$<$ \mbox{\hyperlink{classMultimedia}{Multimedia}} $\ast$ $>$}]{init,  }\item[{string}]{name\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGenericTable_abedadbb357a53abbdace27066f2e21d2}\label{classGenericTable_abedadbb357a53abbdace27066f2e21d2}} 
+\index{GenericTable@{GenericTable}!createObject@{createObject}}
+\index{createObject@{createObject}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{createObject()}{createObject()}}
+{\footnotesize\ttfamily void Generic\+Table\+::create\+Object (\begin{DoxyParamCaption}\item[{istream \&}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGenericTable_a445358b8f83ca7729e49e94a7b877e7d}\label{classGenericTable_a445358b8f83ca7729e49e94a7b877e7d}} 
+\index{GenericTable@{GenericTable}!createPhoto@{createPhoto}}
+\index{createPhoto@{createPhoto}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{createPhoto()}{createPhoto()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classPhoto}{Photo}} $\ast$ Generic\+Table\+::create\+Photo (\begin{DoxyParamCaption}\item[{int}]{long\+\_\+,  }\item[{int}]{lat\+\_\+,  }\item[{string}]{name\+\_\+,  }\item[{string}]{pathname\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGenericTable_aae4c693c19bc37f428ae30fa410742fd}\label{classGenericTable_aae4c693c19bc37f428ae30fa410742fd}} 
+\index{GenericTable@{GenericTable}!createVideo@{createVideo}}
+\index{createVideo@{createVideo}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{createVideo()}{createVideo()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVideo}{Video}} $\ast$ Generic\+Table\+::create\+Video (\begin{DoxyParamCaption}\item[{int}]{length\+\_\+,  }\item[{string}]{name\+\_\+,  }\item[{string}]{pathname\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGenericTable_ad860bb9796c692c78398f2289d8bcb17}\label{classGenericTable_ad860bb9796c692c78398f2289d8bcb17}} 
+\index{GenericTable@{GenericTable}!getTableBegin@{getTableBegin}}
+\index{getTableBegin@{getTableBegin}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{getTableBegin()}{getTableBegin()}}
+{\footnotesize\ttfamily map$<$string, \mbox{\hyperlink{classMultimedia}{Multimedia}}$\ast$$>$\+::iterator Generic\+Table\+::get\+Table\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericTable_a46f003dc304d46bc033daa1082b7158f}\label{classGenericTable_a46f003dc304d46bc033daa1082b7158f}} 
+\index{GenericTable@{GenericTable}!getTableEnd@{getTableEnd}}
+\index{getTableEnd@{getTableEnd}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{getTableEnd()}{getTableEnd()}}
+{\footnotesize\ttfamily map$<$string, \mbox{\hyperlink{classMultimedia}{Multimedia}}$\ast$$>$\+::iterator Generic\+Table\+::get\+Table\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericTable_a2083fb480456d6bea826d1b20a63c872}\label{classGenericTable_a2083fb480456d6bea826d1b20a63c872}} 
+\index{GenericTable@{GenericTable}!saveObject@{saveObject}}
+\index{saveObject@{saveObject}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{saveObject()}{saveObject()}}
+{\footnotesize\ttfamily void Generic\+Table\+::save\+Object (\begin{DoxyParamCaption}\item[{ostream \&}]{f,  }\item[{string}]{name\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGenericTable_a1ab1a4d0b7f0e90d02c1bb6df1bae319}\label{classGenericTable_a1ab1a4d0b7f0e90d02c1bb6df1bae319}} 
+\index{GenericTable@{GenericTable}!searchGroup@{searchGroup}}
+\index{searchGroup@{searchGroup}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{searchGroup()}{searchGroup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGroup}{Group}} $\ast$ Generic\+Table\+::search\+Group (\begin{DoxyParamCaption}\item[{string}]{name\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGenericTable_ad8afdfc4782fa924cd26567c8dff1f21}\label{classGenericTable_ad8afdfc4782fa924cd26567c8dff1f21}} 
+\index{GenericTable@{GenericTable}!searchMultimedia@{searchMultimedia}}
+\index{searchMultimedia@{searchMultimedia}!GenericTable@{GenericTable}}
+\doxysubsubsection{\texorpdfstring{searchMultimedia()}{searchMultimedia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMultimedia}{Multimedia}} $\ast$ Generic\+Table\+::search\+Multimedia (\begin{DoxyParamCaption}\item[{string}]{name\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{genericTable_8h}{generic\+Table.\+h}}\item 
+src/\mbox{\hyperlink{genericTable_8cpp}{generic\+Table.\+cpp}}\end{DoxyCompactItemize}

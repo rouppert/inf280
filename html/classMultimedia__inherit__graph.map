@@ -1,0 +1,6 @@
+<map id="Multimedia" name="Multimedia">
+<area shape="rect" id="node1" title="This class describes a generic Multimedia object. A Multimedia object is only described by a name and..." alt="" coords="28,5,124,32"/>
+<area shape="rect" id="node2" href="$classPhoto.html" title="This class describes a Photo. A Photo is a Multimedia object, which has a longitude and a latitude." alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$classVideo.html" title="This class describes a Video. A Video is a Multimedia object which has a length." alt="" coords="88,80,147,107"/>
+<area shape="rect" id="node4" href="$classFilm.html" title="This class describes a film. A film is a video, which is divided into chapters." alt="" coords="92,155,143,181"/>
+</map>

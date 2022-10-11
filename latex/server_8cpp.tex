@@ -1,0 +1,77 @@
+\hypertarget{server_8cpp}{}\doxysection{src/server.cpp File Reference}
+\label{server_8cpp}\index{src/server.cpp@{src/server.cpp}}
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}server.\+h\char`\"{}}\newline
+Include dependency graph for server.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMyBase}{My\+Base}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{server_8cpp_a19ddb486aac0896249c46eb9e9159d6a}{parse\+Request}} (const string \&request)
+\begin{DoxyCompactList}\small\item\em Extracts informations from a request sent by the client. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{server_8cpp_a11717c934f77ad5167dac5d28562d85a}{PORT}} = 3331
+\item 
+\mbox{\hyperlink{classGenericTable}{Generic\+Table}} $\ast$ \mbox{\hyperlink{server_8cpp_a8a7e3a7ae726157cd01a019bc8216484}{table}} = new \mbox{\hyperlink{classGenericTable}{Generic\+Table}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{server.cpp@{server.cpp}!main@{main}}
+\index{main@{main}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{server_8cpp_a19ddb486aac0896249c46eb9e9159d6a}\label{server_8cpp_a19ddb486aac0896249c46eb9e9159d6a}} 
+\index{server.cpp@{server.cpp}!parseRequest@{parseRequest}}
+\index{parseRequest@{parseRequest}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{parseRequest()}{parseRequest()}}
+{\footnotesize\ttfamily string parse\+Request (\begin{DoxyParamCaption}\item[{const string \&}]{request }\end{DoxyParamCaption})}
+
+
+
+Extracts informations from a request sent by the client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Request of the client asking for an action on a multimedia content.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A parsed request. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{server_8cpp_a11717c934f77ad5167dac5d28562d85a}\label{server_8cpp_a11717c934f77ad5167dac5d28562d85a}} 
+\index{server.cpp@{server.cpp}!PORT@{PORT}}
+\index{PORT@{PORT}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{PORT}{PORT}}
+{\footnotesize\ttfamily const int PORT = 3331}
+
+\mbox{\Hypertarget{server_8cpp_a8a7e3a7ae726157cd01a019bc8216484}\label{server_8cpp_a8a7e3a7ae726157cd01a019bc8216484}} 
+\index{server.cpp@{server.cpp}!table@{table}}
+\index{table@{table}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGenericTable}{Generic\+Table}}$\ast$ table = new \mbox{\hyperlink{classGenericTable}{Generic\+Table}}()}
+

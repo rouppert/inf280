@@ -1,0 +1,240 @@
+\hypertarget{classPhoto}{}\doxysection{Photo Class Reference}
+\label{classPhoto}\index{Photo@{Photo}}
+
+
+This class describes a \mbox{\hyperlink{classPhoto}{Photo}}. A \mbox{\hyperlink{classPhoto}{Photo}} is a \mbox{\hyperlink{classMultimedia}{Multimedia}} object, which has a longitude and a latitude.  
+
+
+
+
+{\ttfamily \#include $<$photo.\+h$>$}
+
+
+
+Inheritance diagram for Photo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classPhoto__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Photo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classPhoto__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPhoto_a513293ab7558bca1756be58a3508d2fe}{set\+Long}} (int long\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets longitude of the video. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPhoto_a0a967cf35cbf4b9dca129eb34784f716}{set\+Lat}} (int lat\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets latitude of the video. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPhoto_af685e3dcf39f5e49ce40395cce44d030}{get\+Long}} () const
+\item 
+int \mbox{\hyperlink{classPhoto_a9eba6fde379e994d4d851425cd6013c8}{get\+Lat}} () const
+\item 
+string \mbox{\hyperlink{classPhoto_a0811b00dc4a2c138efbeb600165d2744}{get\+Class\+Name}} () const override
+\item 
+string \mbox{\hyperlink{classPhoto_a23ecee6b4692a1d3c3db9456d243c697}{display\+Param}} (ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Displays parameters of the video on \char`\"{}out\char`\"{}. Overrides \mbox{\hyperlink{classMultimedia}{Multimedia}} original method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPhoto_a98b55224b5f9bd016cb08aa2e9a64e46}{play}} () const override
+\begin{DoxyCompactList}\small\item\em Opens photo on ImageJ. Overrides \mbox{\hyperlink{classMultimedia}{Multimedia}} original method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPhoto_aa2d49c68d614861518fc687a1b9eb4f6}{create\+From\+File}} (string parameters) override
+\begin{DoxyCompactList}\small\item\em Reads given line in a file, on which parameters of \mbox{\hyperlink{classMultimedia}{Multimedia}} Object are saved, and creates matching object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPhoto_a2d0551f90ff69a856868f4f256fab4ac}{save\+In\+File}} (std\+::ostream \&f) const override
+\begin{DoxyCompactList}\small\item\em Saves \mbox{\hyperlink{classMultimedia}{Multimedia}} object\textquotesingle{}s parameters in given file f. Parameters are written as in following example. \char`\"{}\+Photo example multimedia/example.\+jpeg\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPhoto_adc366234be6226600360c7cbba8e7fcf}{$\sim$\+Photo}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPhoto_a4a8a16edabd18d42710173d31645c19f}{Photo}} (int long\+\_\+=0, int lat\+\_\+=0, string name\+\_\+=\char`\"{}default name\char`\"{}, string pathname\+\_\+=\char`\"{}default pathname\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classPhoto}{Photo}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPhoto_a942de9fdcc4f73565e9c61875502ee88}{Generic\+Table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a \mbox{\hyperlink{classPhoto}{Photo}}. A \mbox{\hyperlink{classPhoto}{Photo}} is a \mbox{\hyperlink{classMultimedia}{Multimedia}} object, which has a longitude and a latitude. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMultimedia}{Multimedia}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPhoto_a4a8a16edabd18d42710173d31645c19f}\label{classPhoto_a4a8a16edabd18d42710173d31645c19f}} 
+\index{Photo@{Photo}!Photo@{Photo}}
+\index{Photo@{Photo}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{Photo()}{Photo()}}
+{\footnotesize\ttfamily Photo\+::\+Photo (\begin{DoxyParamCaption}\item[{int}]{long\+\_\+ = {\ttfamily 0},  }\item[{int}]{lat\+\_\+ = {\ttfamily 0},  }\item[{string}]{name\+\_\+ = {\ttfamily \char`\"{}default~name\char`\"{}},  }\item[{string}]{pathname\+\_\+ = {\ttfamily \char`\"{}default~pathname\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classPhoto}{Photo}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em long\+\_\+} & \+: longitude of the video. \\
+\hline
+{\em lat\+\_\+} & \+: latitude of the video. \\
+\hline
+{\em name\+\_\+} & \\
+\hline
+{\em pathname\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPhoto_adc366234be6226600360c7cbba8e7fcf}\label{classPhoto_adc366234be6226600360c7cbba8e7fcf}} 
+\index{Photo@{Photo}!````~Photo@{$\sim$Photo}}
+\index{````~Photo@{$\sim$Photo}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{$\sim$Photo()}{~Photo()}}
+{\footnotesize\ttfamily Photo\+::$\sim$\+Photo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPhoto_aa2d49c68d614861518fc687a1b9eb4f6}\label{classPhoto_aa2d49c68d614861518fc687a1b9eb4f6}} 
+\index{Photo@{Photo}!createFromFile@{createFromFile}}
+\index{createFromFile@{createFromFile}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{createFromFile()}{createFromFile()}}
+{\footnotesize\ttfamily void Photo\+::create\+From\+File (\begin{DoxyParamCaption}\item[{string}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reads given line in a file, on which parameters of \mbox{\hyperlink{classMultimedia}{Multimedia}} Object are saved, and creates matching object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & line on which parameters of the object are written. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a2ac9328ec37ed15265c762711b9cd88b}{Multimedia}}.
+
+\mbox{\Hypertarget{classPhoto_a23ecee6b4692a1d3c3db9456d243c697}\label{classPhoto_a23ecee6b4692a1d3c3db9456d243c697}} 
+\index{Photo@{Photo}!displayParam@{displayParam}}
+\index{displayParam@{displayParam}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{displayParam()}{displayParam()}}
+{\footnotesize\ttfamily string Photo\+::display\+Param (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays parameters of the video on \char`\"{}out\char`\"{}. Overrides \mbox{\hyperlink{classMultimedia}{Multimedia}} original method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \+: output stream for parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parameters of the video. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a4eed873fe92b1b6a84fbb1a065ebffea}{Multimedia}}.
+
+\mbox{\Hypertarget{classPhoto_a0811b00dc4a2c138efbeb600165d2744}\label{classPhoto_a0811b00dc4a2c138efbeb600165d2744}} 
+\index{Photo@{Photo}!getClassName@{getClassName}}
+\index{getClassName@{getClassName}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{getClassName()}{getClassName()}}
+{\footnotesize\ttfamily string Photo\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a297b86e903b48d84acb3590fc9f79ba1}{Multimedia}}.
+
+\mbox{\Hypertarget{classPhoto_a9eba6fde379e994d4d851425cd6013c8}\label{classPhoto_a9eba6fde379e994d4d851425cd6013c8}} 
+\index{Photo@{Photo}!getLat@{getLat}}
+\index{getLat@{getLat}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{getLat()}{getLat()}}
+{\footnotesize\ttfamily int Photo\+::get\+Lat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+latitude of the video. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPhoto_af685e3dcf39f5e49ce40395cce44d030}\label{classPhoto_af685e3dcf39f5e49ce40395cce44d030}} 
+\index{Photo@{Photo}!getLong@{getLong}}
+\index{getLong@{getLong}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{getLong()}{getLong()}}
+{\footnotesize\ttfamily int Photo\+::get\+Long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+longitude of the video. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPhoto_a98b55224b5f9bd016cb08aa2e9a64e46}\label{classPhoto_a98b55224b5f9bd016cb08aa2e9a64e46}} 
+\index{Photo@{Photo}!play@{play}}
+\index{play@{play}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Photo\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Opens photo on ImageJ. Overrides \mbox{\hyperlink{classMultimedia}{Multimedia}} original method. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a502744cc84895fa629cb7c211b21b1ca}{Multimedia}}.
+
+\mbox{\Hypertarget{classPhoto_a2d0551f90ff69a856868f4f256fab4ac}\label{classPhoto_a2d0551f90ff69a856868f4f256fab4ac}} 
+\index{Photo@{Photo}!saveInFile@{saveInFile}}
+\index{saveInFile@{saveInFile}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{saveInFile()}{saveInFile()}}
+{\footnotesize\ttfamily void Photo\+::save\+In\+File (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Saves \mbox{\hyperlink{classMultimedia}{Multimedia}} object\textquotesingle{}s parameters in given file f. Parameters are written as in following example. \char`\"{}\+Photo example multimedia/example.\+jpeg\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \+: file to save object in. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_ada7f3879d420c354f90ba471ea849a19}{Multimedia}}.
+
+\mbox{\Hypertarget{classPhoto_a0a967cf35cbf4b9dca129eb34784f716}\label{classPhoto_a0a967cf35cbf4b9dca129eb34784f716}} 
+\index{Photo@{Photo}!setLat@{setLat}}
+\index{setLat@{setLat}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{setLat()}{setLat()}}
+{\footnotesize\ttfamily void Photo\+::set\+Lat (\begin{DoxyParamCaption}\item[{int}]{lat\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets latitude of the video. 
+
+\mbox{\Hypertarget{classPhoto_a513293ab7558bca1756be58a3508d2fe}\label{classPhoto_a513293ab7558bca1756be58a3508d2fe}} 
+\index{Photo@{Photo}!setLong@{setLong}}
+\index{setLong@{setLong}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{setLong()}{setLong()}}
+{\footnotesize\ttfamily void Photo\+::set\+Long (\begin{DoxyParamCaption}\item[{int}]{long\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets longitude of the video. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPhoto_a942de9fdcc4f73565e9c61875502ee88}\label{classPhoto_a942de9fdcc4f73565e9c61875502ee88}} 
+\index{Photo@{Photo}!GenericTable@{GenericTable}}
+\index{GenericTable@{GenericTable}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{GenericTable}{GenericTable}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classGenericTable}{Generic\+Table}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{photo_8h}{photo.\+h}}\item 
+src/\mbox{\hyperlink{photo_8cpp}{photo.\+cpp}}\end{DoxyCompactItemize}

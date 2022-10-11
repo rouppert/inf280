@@ -1,0 +1,11 @@
+<map id="tele_interface.mainWindow" name="tele_interface.mainWindow">
+<area shape="rect" id="node1" title=" " alt="" coords="278,187,479,213"/>
+<area shape="rect" id="node2" href="$classJFrame.html" title=" " alt="" coords="5,96,72,123"/>
+<area shape="rect" id="node3" title=" " alt="" coords="96,96,179,123"/>
+<area shape="rect" id="node4" title=" " alt="" coords="203,96,277,123"/>
+<area shape="rect" id="node5" href="$classtele__interface_1_1Client.html" title=" " alt="" coords="301,96,456,123"/>
+<area shape="rect" id="node6" title=" " alt="" coords="179,5,311,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="423,5,462,32"/>
+<area shape="rect" id="node8" title=" " alt="" coords="573,96,667,123"/>
+<area shape="rect" id="node9" title=" " alt="" coords="691,96,775,123"/>
+</map>
